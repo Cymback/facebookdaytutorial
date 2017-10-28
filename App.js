@@ -6,7 +6,7 @@ import { StackNavigator } from 'react-navigation';
 const Touchable = (props) => (
     <TouchableOpacity style={styles.button} onPress={props.onPress}>
         <Text style={styles.buttonText}>{props.title}</Text>
-    </TouchableOpacity>);
+    </TouchableOpacity>)
 
 class HomeScreen extends React.Component {
     static navigationOptions = { title: 'Day1 Tutorial' };
