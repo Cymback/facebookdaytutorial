@@ -2,6 +2,9 @@ import React from 'react';
 import { Text, View, Platform, TouchableOpacity, StyleSheet, Button, WebView } from 'react-native';
 import { Constants, WebBrowser } from "expo";
 import { StackNavigator } from 'react-navigation';
+import basics from "./Basics";
+import props from "./Props";
+import WhatToDo from "./WhatToDo";
 
 const Touchable = (props) => (
     <TouchableOpacity style={styles.button} onPress={props.onPress}>
@@ -36,9 +39,10 @@ export default App = () => <RouteStack style={{ marginTop: Platform.OS === 'ios'
 
 const RouteStack = StackNavigator({
     Home: { screen: HomeScreen },
-    basics: { screen: Basics },
-    props: { screen: Props },
-    web: { screen: WhatToDo },
+    basics: { screen: basics },
+    props: { screen: props },
+    //web: { screen: WhatToDo },
+
 });
 
 const styles = StyleSheet.create({

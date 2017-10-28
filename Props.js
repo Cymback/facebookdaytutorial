@@ -3,7 +3,7 @@ import { Text, View, Platform, TouchableOpacity, StyleSheet, Button, WebView } f
 import { Constants, WebBrowser } from "expo";
 import { StackNavigator } from 'react-navigation';
 
-//Todo: Refactor into a seperate file (Props.js), import and complete the exercise
+
 class Props extends React.Component {
     static navigationOptions = { title: "Props" }
     render() {
@@ -14,3 +14,4 @@ class Props extends React.Component {
         )
     }
 }
+export default Props

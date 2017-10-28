@@ -13,3 +13,4 @@ class basics extends React.Component {
         )
     }
 }
+export default basics;
